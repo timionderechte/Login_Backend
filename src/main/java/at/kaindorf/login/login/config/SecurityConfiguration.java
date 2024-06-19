@@ -45,7 +45,7 @@ public class SecurityConfiguration {
     CorsConfigurationSource corsConfigurationSource() {
 
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:5173"));
+        configuration.setAllowedOrigins(List.of("https://riskyroad.kessaft.com"));
         configuration.setAllowedMethods(List.of("POST","OPTIONS","GET"));
         configuration.setAllowedHeaders(List.of("Content-Type", "Authorization", "X-Requested-With", "Accept"));
         configuration.setAllowCredentials(true);
